@@ -101,6 +101,9 @@ fi
 %attr(0755,haproxy,haproxy) %{_sharedstatedir}/haproxy
 
 %changelog
+* Tue May 19 2015 Nick Byrne <nick@incension.com>
+- updated to 1.5.12
+
 * Sat Jan 03 2015 Jonathan Mainguy <jon@soh.re>
 - updated to 1.5.10
 
