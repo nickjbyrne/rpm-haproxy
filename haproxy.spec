@@ -1,11 +1,3 @@
-# To Build:
-#
-# sudo yum -y install rpmdevtools && rpmdev-setuptree
-# sudo yum -y install pcre-devel gcc make
-# wget https://raw.github.com/nmilford/rpm-haproxy/master/haproxy.spec -O ~/rpmbuild/SPECS/haproxy.spec
-# wget http://www.haproxy.org/download/1.5/src/haproxy-1.5.10.tar.gz -O ~/rpmbuild/SOURCES/haproxy-1.5.10.tar.gz
-# rpmbuild -bb  ~/rpmbuild/SPECS/haproxy.spec
-
 %define version 1.5.12
 %{!?release: %{!?release: %define release 1}}
 
