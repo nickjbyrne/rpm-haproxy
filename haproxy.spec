@@ -36,7 +36,7 @@ risking the system's stability.
 %define __perl_requires /bin/true
 
 %build
-%{__make} USE_PCRE=1 DEBUG="" ARCH=%{_target_cpu} TARGET=linux26 USE_OPENSSL=1
+%{__make} USE_PCRE=1 DEBUG="" ARCH=%{_target_cpu} TARGET=linux26 USE_OPENSSL=1 USE_ZLIB=yes
 
 %install
 [ "%{buildroot}" != "/" ] && %{__rm} -rf %{buildroot}
@@ -93,6 +93,9 @@ fi
 %attr(0755,haproxy,haproxy) %{_sharedstatedir}/haproxy
 
 %changelog
+* Thu May 21 Nick Byrne <nick@incension.com>
+- enable zlib compression by default
+
 * Tue May 19 2015 Nick Byrne <nick@incension.com>
 - updated to 1.5.12
 
