@@ -1,4 +1,4 @@
-%define version 1.5.12
+%define version 1.5.14
 %{!?release: %{!?release: %define release 1}}
 
 Summary: HA-Proxy is a TCP/HTTP reverse proxy for high availability environments
@@ -93,7 +93,10 @@ fi
 %attr(0755,haproxy,haproxy) %{_sharedstatedir}/haproxy
 
 %changelog
-* Thu May 21 Nick Byrne <nick@incension.com>
+* Thu Jul 09 2015 Nick Byrne <nick@incension.com
+- updated to 1.5.14
+
+* Thu May 21 2015 Nick Byrne <nick@incension.com>
 - enable zlib compression by default
 
 * Tue May 19 2015 Nick Byrne <nick@incension.com>
